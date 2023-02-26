@@ -43,3 +43,6 @@ All number keys from 0-9 are customizable
 ### Issues
 
 Please report issues or suggestions [here](https://github.com/Treythan/SoTF-Customizable-Hotkeys/issues)
+
+### Preview
+https://i.imgur.com/zHJgMY7.png

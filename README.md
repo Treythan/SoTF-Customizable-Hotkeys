@@ -1,7 +1,6 @@
 # SoTF-Customizable-Hotkeys
 
-A mod menu to restore number key hotkey functionality from The Forest
-All number keys from 0-9 are customizable
+A mod menu to restore number key hotkey functionality from The Forest. All number keys from 0-9 are customizable
 
 ### Install
 - Install [MelonLoader](https://melonwiki.xyz/#/?id=automated-installation) v0.6.0 ALPHA (go into SETTINGS tab during installation and check "Show ALPHA Pre-Releases")

@@ -6,7 +6,7 @@ All number keys from 0-9 are customizable
 ### Install
 
 - Install [MelonLoader](https://melonwiki.xyz/#/?id=automated-installation) v0.6.0 ALPHA (go into SETTINGS tab during installation and check "Show ALPHA Pre-Releases")
-- Download the latest version from the [releases page](https://github.com/matt-harp/SotF-Hotkeys/releases)
+- Download the latest version from the [releases page](https://github.com/Treythan/SoTF-Customizable-Hotkeys/releases)
 - Place the mod's .dll into your Mods folder<sup>1</sup> in your game install path
 - Run the game and enjoy
 
@@ -42,4 +42,4 @@ All number keys from 0-9 are customizable
 
 ### Issues
 
-Please report issues or suggestions [here](https://github.com/matt-harp/SotF-Hotkeys/issues)
+Please report issues or suggestions [here](https://github.com/Treythan/SoTF-Customizable-Hotkeys/issues)

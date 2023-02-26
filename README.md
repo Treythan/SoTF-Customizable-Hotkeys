@@ -3,9 +3,6 @@
 A mod menu to restore number key hotkey functionality from The Forest
 All number keys from 0-9 are customizable
 
-### Notice
-Any items you want to be bound to a hotkey, MUST BE EQUIPPED ON YOUR PACK. (If you don't see it on your bag when you hold your inventory button, it will not work)
-
 ### Install
 - Install [MelonLoader](https://melonwiki.xyz/#/?id=automated-installation) v0.6.0 ALPHA (go into SETTINGS tab during installation and check "Show ALPHA Pre-Releases")
 - Download the latest version from the [releases page](https://github.com/Treythan/SoTF-Customizable-Hotkeys/releases)

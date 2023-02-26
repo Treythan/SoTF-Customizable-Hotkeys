@@ -43,10 +43,3 @@ All number keys from 0-9 are customizable
 ### Issues
 
 Please report issues or suggestions [here](https://github.com/matt-harp/SotF-Hotkeys/issues)
-
-
-### Build from source
-
-1. Clone the repo
-2. In the csproj, point `SONS_INSTALL` to your game root.
-3. Build

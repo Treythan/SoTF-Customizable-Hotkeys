@@ -12,11 +12,11 @@ All number keys from 0-9 are customizable
 
 <sup>1</sup> create the folder if needed
 
-###Instructions
+### Instructions
 - Press F10 to open/close the menu once you are in game
 - Enter the item name you wish the key to be bound to in the corresponding text box (see supported iten names below)
 
-###Supported Item Swaps
+### Supported Item Swaps
 - "Tactical Axe"
 - "Modern Axe"
 - "Pistol"

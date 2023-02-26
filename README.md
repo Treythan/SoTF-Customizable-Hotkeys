@@ -4,7 +4,6 @@ A mod menu to restore number key hotkey functionality from The Forest
 All number keys from 0-9 are customizable
 
 ### Install
-
 - Install [MelonLoader](https://melonwiki.xyz/#/?id=automated-installation) v0.6.0 ALPHA (go into SETTINGS tab during installation and check "Show ALPHA Pre-Releases")
 - Download the latest version from the [releases page](https://github.com/Treythan/SoTF-Customizable-Hotkeys/releases)
 - Place the mod's .dll into your Mods folder<sup>1</sup> in your game install path
@@ -40,10 +39,9 @@ All number keys from 0-9 are customizable
 - "Flare"
 - "Torch"
 
-### Issues
-
-Please report issues or suggestions [here](https://github.com/Treythan/SoTF-Customizable-Hotkeys/issues)
-
 ### Preview
 ![image](https://user-images.githubusercontent.com/52725821/221442557-c233be0b-1429-48d0-aee4-715a6063dae7.png)
+
+### Issues
+Please report issues or suggestions [here](https://github.com/Treythan/SoTF-Customizable-Hotkeys/issues)
 

@@ -14,7 +14,7 @@ All number keys from 0-9 are customizable
 
 ### Instructions
 - Press F10 to open/close the menu once you are in game
-- Enter the item name you wish the key to be bound to in the corresponding text box (see supported iten names below)
+- Enter the item name you wish the key to be bound to in the corresponding text box (see supported item names below)
 
 ### Supported Item Swaps
 - "Tactical Axe"

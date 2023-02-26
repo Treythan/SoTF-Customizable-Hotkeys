@@ -1,0 +1,1 @@
+# SoTF-Customizable-Hotkeys

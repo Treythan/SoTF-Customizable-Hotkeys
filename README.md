@@ -45,4 +45,5 @@ All number keys from 0-9 are customizable
 Please report issues or suggestions [here](https://github.com/Treythan/SoTF-Customizable-Hotkeys/issues)
 
 ### Preview
-https://i.imgur.com/zHJgMY7.png
+![image](https://user-images.githubusercontent.com/52725821/221442557-c233be0b-1429-48d0-aee4-715a6063dae7.png)
+

@@ -1,0 +1,444 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Ai.Utilities">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Ai.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Ai.Vail">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Ai.Vail.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Animation.Mae">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Animation.Mae.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Areas">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Areas.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Atmosphere">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Atmosphere.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Attributes">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Cinematics">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Cinematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Construction">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Construction.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Construction.GRABS">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Construction.GRABS.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Construction.Utils">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Construction.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.ConstructionBoltToken">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.ConstructionBoltToken.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Crest">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Crest.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Debug">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Dlss">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Dlss.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Environment">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Environment.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Events">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Events.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Extensions">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.FieldOfView">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.FieldOfView.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.FMOD">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.FMOD.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.FpsUtility">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.FpsUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.GameApplication">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.GameApplication.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gameplay.GameSetup">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gameplay.GameSetup.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gameplay.LevelProps">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gameplay.LevelProps.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gameplay.StatusEffects">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gameplay.StatusEffects.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gui">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gui.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gui.Colors">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gui.Colors.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gui.Multiplayer">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gui.Multiplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Gui.Options">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Gui.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Input">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Interfaces">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Item">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Item.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Loading">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Loading.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Lodding">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Lodding.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Multiplayer">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Multiplayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.ObsoleteMonos">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.ObsoleteMonos.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Physics">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.PostProcessing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.PostProcessing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Quality">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Quality.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Ragdoll">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Ragdoll.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Rendering">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Save">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Save.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Scratchpad">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Scratchpad.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Settings">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.SettingsWrappers">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.SettingsWrappers.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.StatSystem">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.StatSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Testing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Tests">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Trees">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Trees.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.UiElements">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.UiElements.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Utilities">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.VFX">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.VFX.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.VFX.SimpleUnderwater">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.VFX.SimpleUnderwater.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSons.Weapon">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Il2CppSons.Weapon.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\net6\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CrossSceneReference">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.CrossSceneReference.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.BatchRendererGroup-Testing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.BatchRendererGroup-Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Dependencies\Il2CppAssemblyGenerator\UnityDependencies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.NVIDIAModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Sons Of The Forest\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
